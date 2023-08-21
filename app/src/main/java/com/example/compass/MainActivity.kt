@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         magnetometer = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)
 
         if (accelerometer == null || magnetometer == null) {
-            // Handle if the device doesn't have required sensors
+
         }
     }
 
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
     private val sensorListener = object : SensorEventListener {
         override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-            // Do nothing here
+
         }
 
         override fun onSensorChanged(event: SensorEvent) {
